@@ -162,10 +162,10 @@ actor {
             var i : Nat = j+1;
 
             if(i < array_sort.size()) {
-                for(wx in array_sort.vals()) {
+                label f for(wx in array_sort.vals()) {
                     if(array_sort[i] < array_sort[min]) {
                         min := i;
-                        // need break, but no idea how to do it
+                        break f;
                     };
 
                     i += 1;
